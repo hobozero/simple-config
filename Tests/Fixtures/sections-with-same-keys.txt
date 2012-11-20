@@ -1,0 +1,6 @@
+[section-one]
+key: value
+
+[section-two]
+
+key   :  value
