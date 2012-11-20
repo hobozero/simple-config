@@ -27,7 +27,7 @@ Methods
 A parser is created like so:
 
 ```c#
-var parser = new Parser("/path/to/config.txt")
+var parser = new Parser("/path/to/config.txt");
 ```
 
 Getting values is easy:
