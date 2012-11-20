@@ -7,17 +7,17 @@ File Format
 -----------
 A configuration file has the following format:
 
-[Section Heading]
-key: value
-key2: value
-multiline: This is a longer configuration
-  that is broken into multiple lines by having
-  each line after the first be indented one or
-  more spaces
+[Section Heading]  
+key: value  
+key2: value  
+multiline: This is a longer configuration  
+  that is broken into multiple lines by having  
+  each line after the first be indented one or  
+  more spaces  
 
-[ Section Two ]
-key: keys cant be duplicated in a section
-  but different sections can have the same key
+[ Section Two ]  
+key: keys cant be duplicated in a section  
+  but different sections can have the same key  
 
 Config values can be fetched as strings, floats, and ints, and can be set as such.
 
