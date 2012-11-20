@@ -9,7 +9,7 @@ namespace Tests.ConfigurationParser
 	[TestFixture]
 	public class ParserTest : TestBase
 	{
-		protected Parser Parser { get; set; }
+	  protected Parser Parser { get; set; }
 
 		[SetUp]
 		public void SetUp()

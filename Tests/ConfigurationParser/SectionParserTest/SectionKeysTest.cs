@@ -2,7 +2,7 @@ using System;
 using NUnit.Framework;
 using ConfigurationParser;
 
-namespace Tests.ConfigurationParser.SectionParserTest
+namespace Tests.ConfigurationParser.SectionParserTest 
 {
 	[TestFixture]
 	public class SectionKeysTest : TestBase

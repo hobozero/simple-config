@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 namespace Tests
 {
-	abstract public class TestBase
+	abstract public class TestBase 
 	{
 		protected string FixturesPath = Path.GetFullPath("Fixtures");
 

@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Tests/ConfigurationParser/ParserTest.cs">
     <Files>
-      <File FileName="Tests/ConfigurationParser/ParserTest.cs" Line="29" Column="9" />
+      <File FileName="Tests/ConfigurationParser/ParserTest.cs" Line="80" Column="1" />
       <File FileName="ConfigurationParser/Parser.cs" Line="15" Column="32" />
     </Files>
     <Pads>

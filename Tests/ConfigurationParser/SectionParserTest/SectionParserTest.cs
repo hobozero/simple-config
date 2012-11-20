@@ -3,7 +3,7 @@ using NUnit.Framework;
 using ConfigurationParser;
 using System.Collections.Generic;
 
-namespace Tests.ConfigurationParser.SectionParserTest
+namespace Tests.ConfigurationParser.SectionParserTest 
 {
 	[TestFixture]
 	public class SectionParserTest : TestBase

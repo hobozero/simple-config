@@ -3,7 +3,7 @@ using System.IO;
 
 namespace ConfigurationParser
 {
-	public class FileReader
+	public class FileReader 
 	{
 		public string FilePath { get; private set; }
 		public string Contents { get; private set; }

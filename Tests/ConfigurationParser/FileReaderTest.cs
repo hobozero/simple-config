@@ -4,7 +4,7 @@ using System.IO;
 using System.Reflection;
 using ConfigurationParser;
 
-namespace Tests.ConfigurationParser
+namespace Tests.ConfigurationParser 
 {
 	[TestFixture]
 	public class FileReaderTest : TestBase
