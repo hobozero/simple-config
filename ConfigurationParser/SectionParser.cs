@@ -9,8 +9,11 @@ namespace ConfigurationParser
     {
         private FileReader _reader;
         private static readonly Regex SectionPattern = new Regex(@"^\[(.*)\]$", RegexOptions.Compiled);
-        private static readonly Regex PairPattern = new Regex(@"^([\S][^:]+)[\s]*:[\s]*(.*)$", RegexOptions.Compiled);
-        private static readonly Regex ContinuationPattern = new Regex(@"^[\s]+[\S]+", RegexOptions.Compiled);
+        private static readonly Regex PairPattern = new Regex(@"^[\s]*([\S][^[=:]+)[\s]*[=:][\s]*(.*)[\s]*$", RegexOptions.Compiled);
+        //private static readonly Regex ContinuationPattern = new Regex(@"^[\s]+[\S]+", RegexOptions.Compiled);
+        private static readonly Regex ContinuationPattern = new Regex(@"^[^\t\[]+", RegexOptions.Compiled);
+
+        private int _uniqueSectionId = 0;
 
         public Dictionary<string, Section> Sections { get; private set; }
 
@@ -41,7 +44,12 @@ namespace ConfigurationParser
         {
             var match = SectionPattern.Match(line);
             var sectionKey = match.Groups[1].Value.Trim();
+            if (Sections.ContainsKey(sectionKey))
+            {
+                sectionKey += ("_" + _uniqueSectionId++.ToString());
+            }
             Sections.Add(sectionKey, new Section(sectionKey));
+            
         }
 
         private void AddKeyValuePairToLastSectionFromLine(string line)

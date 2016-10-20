@@ -17,7 +17,7 @@ namespace ConfigurationParser
             FilePath = filePath;
             using (var reader = new StreamReader(FilePath))
                 Contents = reader.ReadToEnd().Trim();
-            Lines = Contents.Split(new string[] { "\r\n" }, StringSplitOptions.None);
+            Lines = Contents.Split(new string[] { "\r\n", "\n" }, StringSplitOptions.None);
         }
     }
 }

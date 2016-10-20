@@ -1,0 +1,4 @@
+C:\devGit\Samples\simple-config\ConfigurationParser\bin\Debug\ConfigurationParser.dll
+C:\devGit\Samples\simple-config\ConfigurationParser\bin\Debug\ConfigurationParser.pdb
+C:\devGit\Samples\simple-config\ConfigurationParser\obj\x86\Debug\ConfigurationParser.dll
+C:\devGit\Samples\simple-config\ConfigurationParser\obj\x86\Debug\ConfigurationParser.pdb

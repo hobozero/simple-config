@@ -1,0 +1,1 @@
+C:\devGit\Samples\simple-config\Tests\obj\x86\Debug\Tests.csprojResolveAssemblyReference.cache
